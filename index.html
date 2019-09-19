@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Hello, I'm Everton Pessoa and I'm a Developer from Uberaba, Brazil" />
+  <meta name="keywords" content="everton, pessoa, everton pessoa, engineer, computer, software, developer, frontend, backend, full stack, cv, github" />
+  <meta name="author" content="Everton Pessoa" />
+  <style type="text/css">
+    body {
+      /* background: #320927; */
+      background: #01013d;
+      margin: 5% 0 0 10%;
+      color: #F8F8F8;
+      font-family: 'Courier', 'Courier New', sans-serif;
+      font-size: 24px;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dashed #E2DA6E;
+    }
+    a:hover {
+      border: 0;
+    }
+    pre {
+      line-height: 1.25em;
+    }
+    .string {
+      color: #E2DA6E;
+    }
+    .number {
+      color: #A775FF;
+    }
+    .var {
+      color: #66D9EE;
+      font-style: italic;
+    }
+    .equal {
+      color: #FA2772;
+    }
+    .cursor {
+      animation: blinker 1.5s linear infinite;
+    }
+    @keyframes blinker {  
+      50% { opacity: 0; }
+    }
+    input, textarea {
+      font-family: inherit;
+      font-size: 1.2em;
+      width: 50%;
+      color: #F8F8F8;
+      outline: 0;
+      padding: 10px;
+      background-color: #252525;
+      border: 0;
+      border-bottom: 1px solid #666666;
+      transition: border 0.5s ease;
+    }
+    input:focus, textarea:focus {
+      border-bottom: 1px solid #E2DA6E;
+      transition: border 0.5s ease;
+    }
+    button {
+      font-family: inherit;
+      font-size: 1.2em;
+      outline: 0;
+      color: #F8F8F8;
+      background-color: #444;
+      border: 0;
+      padding: 5px 15px;
+      border-radius: 5px;
+      transition: all 0.5s ease;
+    }
+    button:hover, button:focus {
+      cursor: pointer;
+      color: #000000;
+      background-color: #E2DA6E;
+      transition: all 0.5s ease;
+    }
+  </style>
+  <title>Olá, I'm Everton Pessôa</title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head><body>
+<pre>
+<span class="var">var</span> me <span class="equal">=</span> {
+  firstname: <span class="string">'Everton'</span>,
+  lastname: <span class="string">'Pessôa'</span>,
+  age: <span id="age" class="number"></span>,
+  hometown: <span class="string">'<a target="_blank" href="https://www.google.com/maps/place/Uberaba">Uberaba, Brazil</a>'</span>,
+  degree: <span class="string">'Developer'</span>,
+  skills: [
+            <span class="string"> <a target="_blank" href="https://angular.io/">Angular</a>, <a target="_blank" href="https://nodejs.org">Nodejs</a>,<a target="_blank" href="https://ionic.io">ionic</a>, <a target="_blank" href="https://flutter.dev">flutter</a>, 
+            <a target="_blank" href="https://nestjs.com"> Nestjs</a>, <a target="_blank" href="http://expressjs.com">Expressjs</a>, <a target="_blank" href="https://powerbi.microsoft.com/">power bi</a></span>
+          ],
+  socials: {
+    linkedin: <span class="string">'<a target="_blank" href="https://www.linkedin.com/in/everton-pessoa">linkedin.com/in/everton-pessoa</a>'</span>,
+    github: <span class="string">'<a target="_blank" href="https://www.github.com/everton-pessoa">github.com/everton.pessoa</a>'</span>,
+    facebook: <span class="string">'<a target="_blank" href="https://www.facebook.com/everton.pessoa.5">facebook.com/everton.pessoa.5</a>'</span>
+  },
+  hobbies: [ <span class="string">'develop'</span>, <span class="string">'video games'</span>, <span class="string">'movies'</span>],
+  cv: <span class="string">'<a href="evertonpessoa.pdf">everton/cv</a>'</span>
+};
+
+<span class="cursor">|</span>
+</pre>
+<script type="text/javascript">
+  var ageEl = document.getElementById("age");
+  var birthday = new Date("january 16, 1987");
+  var today = new Date();
+  ageEl.innerHTML = Math.floor((today - birthday) / 31536000000);
+  </script>
+</body>
+</html>
